@@ -1,0 +1,16 @@
+.cardWrapper{
+    font-family: 'Syncopate', sans-serif;
+    background-color: #e5e5e5 ;
+    width:60%;
+    height:140px;
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+.cardCreation{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+font-weight: 600;
+
+}

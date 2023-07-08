@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import { useRouter } from 'next/router';
+import styles from "./styles.module.css";
+import AnswerInput from '../../components/answerInput/answerInput';
 
 const FullQuestion = () => {
     const [question, setQuestionCard] = useState();
@@ -22,8 +24,20 @@ const FullQuestion = () => {
     },[router.query.id]);  //useEffect ivyksta du kartus: pirma patikrina, ar reiksme egzistuoja, antra:ideda//
 
   return (
-    <div>{question && 
-    <h2>{question.title}</h2> }
+    <div className={styles.pageWrapper}>
+        {question &&
+        <div className={styles.fullQuestion}>
+    <h2 className={styles.title}>{question.title}</h2>
+    <div>{question.date}</div>
+    <div>{question.author}</div>
+    <div>{question.description}</div>
+    <hr className={styles.line}></hr>
+    <div className={styles.answersWrapper}>
+        <h4>{question.answers.length}</h4>
+        <AnswerInput/>
+    </div>
+    </div>
+     }
     </div>
   )
 }

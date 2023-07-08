@@ -1,0 +1,21 @@
+.pageWrapper{
+    padding: 10px 50px 10px;
+}
+
+.fullQuestion{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #a7a4a4,#117f9b);
+    color:#353232;
+    width:60%;
+    padding:20px 10px 20px;
+    
+}
+.line{
+    border-bottom: 3px solid #353232;
+    width:100%;
+}
+
+.answersWrapper{
+    color:#117f9b;
+}

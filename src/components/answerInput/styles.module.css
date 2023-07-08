@@ -1,0 +1,43 @@
+.answerInputForm{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    align-items: center;
+    margin-top:50px;
+
+}
+
+.answerInputForm input{
+    padding: 8px;
+    width:450px;
+
+}
+.answerInputForm button{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(4, 190, 128);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.addedAnswer{
+    color: #292828;
+    
+}
+
+.addedAnswerInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.addedAnswer hr{
+    border-bottom: 3px solid #353232;
+    width:100%;
+}

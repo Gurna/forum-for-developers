@@ -1,8 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import QuestionCard from "../components/questionCard";
 import styles from "./styles.module.css";
+
 
 
 const MainPage = () => {

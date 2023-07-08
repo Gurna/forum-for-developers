@@ -1,0 +1,36 @@
+.footer{
+    display:flex;
+    justify-content: space-between;
+    background: linear-gradient(to left, #a7a4a4,#117f9b);
+    font-family:Syncopate;
+    margin-top:20px;
+}
+
+.footerLinks{
+    display:flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.footerLinks ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+    
+}
+
+.footerLinks ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight:600;
+    
+}
+
+.footerSocialMedia ul{
+    display:flex;
+    list-style-type: none;
+    gap:10px;
+    font-size:10px;
+}

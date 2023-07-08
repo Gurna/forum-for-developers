@@ -3,6 +3,7 @@ import axios from "axios";
 import QuestionCard from "../components/questionCard";
 import styles from "./styles.module.css";
 import Navbar from '../components/navbar/Navbar';
+import Footer from "../components/footer/Footer";
 
 
 const MainPage = () => {
@@ -42,6 +43,7 @@ const MainPage = () => {
       </div>  
       ))}
       </div>
+      <Footer/>
     </div>
   )
 }

@@ -3,6 +3,8 @@ import axios from "axios";
 import { useRouter } from 'next/router';
 import styles from "./styles.module.css";
 import AnswerInput from '../../components/answerInput/answerInput';
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 
 const FullQuestion = () => {
     const [question, setQuestionCard] = useState();
@@ -24,6 +26,8 @@ const FullQuestion = () => {
     },[router.query.id]);  //useEffect ivyksta du kartus: pirma patikrina, ar reiksme egzistuoja, antra:ideda//
 
   return (
+    <>
+    <Navbar/>
     <div className={styles.pageWrapper}>
         {question &&
         <div className={styles.fullQuestion}>
@@ -39,6 +43,8 @@ const FullQuestion = () => {
     </div>
      }
     </div>
+    <Footer/>
+    </>
   )
 }
 

@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(to right, #a7a4a4,#117f9b);
+    font-family: Syncopate;
     color:#353232;
     width:60%;
     padding:20px 10px 20px;
@@ -18,4 +19,5 @@
 
 .answersWrapper{
     color:#117f9b;
+    font-family:Syncopate;
 }

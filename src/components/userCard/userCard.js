@@ -9,8 +9,8 @@ const UserCard = ({user_photo, user_name, user_position}) => {
         </div>
             
             
-        <div>
-            <div>{user_name}</div>
+        <div className={styles.userInfo}>
+            <div className={styles.userName}>{user_name}</div>
             <div>{user_position}</div>
         </div>
     </div>

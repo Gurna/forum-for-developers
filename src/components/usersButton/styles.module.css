@@ -1,24 +1,4 @@
-
-.newQuestionForm{
-    display: flex;
-    flex-direction: column;
-    gap:14px;
-    align-items: center;
-    margin-top:100px;
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    border-radius: 10px; 
-}
-
-.newQuestionForm input{
-    padding:8px;
-    width:500px;
-    font-family: 'Syncopate', sans-serif;
-   
-}
-
-.newQuestionForm button{
+.usersButton{
     border: 0;
     line-height: 2.5;
     padding: 0 20px;

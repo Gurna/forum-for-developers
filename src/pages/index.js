@@ -4,6 +4,7 @@ import QuestionCard from "../components/questionCard";
 import styles from "./styles.module.css";
 import Navbar from '../components/navbar/Navbar';
 import Footer from "../components/footer/Footer";
+import UsersButton from "../components/usersButton/usersButton";
 
 
 const MainPage = () => {
@@ -28,8 +29,12 @@ const MainPage = () => {
   
   
   return (
-    <div>
-      <Navbar/>
+    <>
+     <Navbar/>
+     <div className={styles.mainPageWrapper}>
+    <div className={styles.linkButtons}>
+      <UsersButton/>
+      </div>
       <div className={styles.questionWrapper}>
         {questions.map((question)=>(
           <div key = {question._id}>
@@ -42,9 +47,10 @@ const MainPage = () => {
       /> 
       </div>  
       ))}
-      </div>
-      <Footer/>
-    </div>
+      </div> 
+      </div> 
+    <Footer/>
+    </>
   )
 }
 

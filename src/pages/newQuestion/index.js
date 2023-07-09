@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import axios from "axios";
 import styles from "./styles.module.css";
 import { useRouter } from 'next/router';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from "../../components/footer/Footer"
 
 
 const newQuestion = () => {
@@ -26,6 +28,8 @@ const newQuestion = () => {
 
 
   return (
+    <>
+    <Navbar/>
     <div className={styles.newQuestionForm}>
         <div>
             <input value={title} onChange={(question)=>setTitle(question.target.value)} placeholder="title"/>
@@ -42,10 +46,9 @@ const newQuestion = () => {
         <div>
             <button type="submit" onClick={()=>addNewQuestion()}>Add new question</button>
         </div>
-
-
-
         </div>
+        <Footer/>
+        </>
   )
 }
 

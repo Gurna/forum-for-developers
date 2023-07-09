@@ -1,6 +1,22 @@
+.mainPageWrapper{
+    display:grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+
+
 .questionWrapper{
 display:flex;
 flex-direction: column;
-gap: 20px;
-justify-content:center;
+gap: 15px;
+/* justify-content:center; */
+}
+
+.linkButtons{
+    display: flex;
+    flex-direction:column;
+    gap:15px;
+    padding-top:20px;
+    padding-left:40px;
+    
 }

@@ -38,7 +38,7 @@ const SignUp = () => {
             <input value={user_email} onChange={(user)=>setUserEmail(user.target.value)} placeholder="e-mail"/>
         </div>
         <div>
-            <input value={user_password} onChange={(user)=>setUserPassword(user.target.value)} placeholder="password"/>
+            <input type="password" value={user_password} onChange={(user)=>setUserPassword(user.target.value)} placeholder="password"/>
         </div>
         <div>
             <input value={user_photo} onChange={(user)=>setUserPhoto(user.target.value)} placeholder="Please insert your photo"/>

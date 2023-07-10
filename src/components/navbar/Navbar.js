@@ -11,7 +11,7 @@ const Navbar = () => {
         <div>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="/login">
                         <img className={styles.icon} src={login.src}/>
                         <div>Login</div>
                     </a>

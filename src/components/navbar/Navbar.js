@@ -17,7 +17,7 @@ const Navbar = () => {
                     </a>
                     </li>
                 <li>
-                <a href="#">
+                <a href="/signUp">
                     <img className={styles.icon} src={signup.src}/>
                     <div>Signup</div>
                 </a>
